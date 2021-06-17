@@ -1,0 +1,2847 @@
+body {
+    background-color: #181818;
+    margin: 0;
+    padding: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ :root {
+    --nav-load-time: 1000ms;
+    --social-delay: calc(var(--nav-load-time)+ var(--h1-load-time));
+    --h1-load-time: 1100ms;
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
+    --background: #181818;
+    --maintext: #069af5;
+    --white: #fff;
+    --lightwhite: #f5f5f5;
+    --quicklink_color: #08b7f6;
+    --boxes_rect_text_lighter: #555;
+    --boxes_inner_rect: #4d4d4d;
+    --nav-load-time: 1000ms;
+    --h1-load-time: 1100ms;
+    --social-delay: calc(var(--nav-load-time)+ var(--h1-load-time));
+}
+
+header {
+    background: var(--background);
+}
+
+nav {
+    animation: nav-load var(--nav-load-time) ease-in;
+    position: relative;
+    top: 5vh
+}
+
+@keyframes nav-load {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+nav {
+    animation: nav-load var(--nav-load-time) ease-in;
+}
+
+.nav-item {
+    filter: brightness();
+    color: rgb(250, 249, 249);
+}
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+.snip1175 * {
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    font-family: "Montserrat", sans-serif;
+}
+
+.snip1175 li {
+    display: inline-block;
+    list-style: outside none none;
+    font-family: "Montserrat", sans-serif;
+    margin: 0 .1em;
+    overflow: hidden;
+}
+
+.snip1175 a {
+    padding: 0 0.5em 0 0.2em;
+    color: rgb(255, 255, 255);
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;
+    margin: 0;
+    text-decoration: none;
+}
+
+.snip1175 a:before,
+.snip1175 a:after {
+    position: absolute;
+    -webkit-transition: all 0.35s ease;
+    font-family: "Montserrat", sans-serif;
+    transition: all 0.35s ease;
+}
+
+.snip1175 a:before {
+    right: 100%;
+    display: block;
+    width: 3px;
+    height: 100%;
+    content: "";
+    color: rgb(0, 174, 255);
+    font-family: "Montserrat", sans-serif;
+}
+
+.snip1175 a:after {
+    padding: 0 0.5em 0 0.2em;
+    position: absolute;
+    right: 100%;
+    top: 0;
+    content: attr(data-hover);
+    color: rgb(0, 174, 255);
+    white-space: nowrap;
+    font-family: "Montserrat", sans-serif;
+}
+
+.snip1175 li:hover a,
+.snip1175 .current a {
+    transform: translateX(100%);
+    font-family: "Montserrat", sans-serif;
+}
+
+#logo {
+    filter: brightness(5);
+}
+
+#nav-toggle-button {
+    color: white;
+    z-index: 99999;
+    position: fixed;
+    background: var(--boxes_rect_text_lighter);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 3rem;
+    padding-top: 4rem;
+    transform: translateY(-100%);
+}
+
+.navbar-toggler-icon {
+    color: white;
+}
+
+.container {
+    top: 50%;
+    position: absolute;
+    padding-left: 15%;
+    z-index: 2;
+    font-family: "Montserrat", sans-serif;
+    width: 87vw;
+    max-height: 100vh;
+}
+
+@media (min-width: 100.98px) {
+    #Certi {
+        font-size: 2rem;
+        top: 7rem;
+        text-align: center;
+        position: relative;
+        color: blanchedalmond;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+    }
+    #Skills {
+        font-size: 4rem;
+        text-align: center;
+        position: relative;
+        color: blanchedalmond;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+        top: 7rem;
+    }
+    #new2 {
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        border-radius: 20px;
+        box-shadow: 0px 0px 38px var(--boxes_rect_text_lighter);
+        height: 450px;
+        top: 10rem;
+    }
+    #sk {
+        position: relative;
+        font-size: 0.75rem;
+        filter: brightness(5);
+        font-weight: bold;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+    }
+    #skl {
+        height: 180px;
+        width: 180px;
+        border-radius: 50px;
+        padding: 20px;
+    }
+    #def {
+        position: relative;
+        font-size: 1.2rem;
+        filter: brightness(3);
+        text-align: center;
+        top: 3vh;
+        font-family: "Montserrat", sans-serif;
+    }
+    #def2 {
+        position: relative;
+        font-size: 1rem;
+        text-align: center;
+        justify-content: center;
+        filter: brightness(5);
+        top: 5vh;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+    }
+    #clg {
+        height: 180px;
+        width: 180px;
+        border-radius: 50px;
+        padding: 20px;
+    }
+    #new1 {
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        border-radius: 20px;
+        box-shadow: 0px 0px 38px var(--boxes_rect_text_lighter);
+        height: 450px;
+        top: 50rem;
+    }
+    .card-wrapper {
+        position: relative;
+        justify-content: center;
+        border-radius: 10px;
+        box-shadow: 0px 0px 38px var(--boxes_rect_text_lighter);
+        height: 720px;
+        top: -5rem;
+    }
+    .container2 {
+        position: relative;
+        font-family: "Montserrat", sans-serif;
+        top: -12vh;
+    }
+    #op1 {
+        text-align: center;
+        font-weight: bold;
+        filter: brightness(10);
+        font-size: 3rem;
+    }
+    #op {
+        text-align: center;
+        filter: brightness(3);
+        font-size: 1rem;
+    }
+    blockquote {
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+        top: -15vh;
+        font-family: Yesteryear;
+        color: var(--boxes_inner_rect);
+    }
+    blockquote::before {
+        content: "\201C";
+        font-size: 30px;
+        color: var(--maintext);
+    }
+    blockquote::after {
+        content: "\201D";
+        font-size: 30px;
+        color: var(--maintext);
+    }
+    .container1 {
+        position: relative;
+        top: 130vh;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-size: 15px;
+    }
+    #onn {
+        filter: brightness(105);
+        z-index: 2;
+    }
+    nav {
+        animation: nav-load var(--nav-load-time) ease-in;
+        position: relative;
+        top: 5vh;
+    }
+    .container1 {
+        position: relative;
+        top: 110vh;
+        text-align: center;
+        z-index: 2;
+        font-family: "Montserrat", sans-serif;
+        font-size: 12px;
+    }
+    #b {
+        width: 250px;
+        height: 300px;
+        opacity: 0.5;
+        position: relative;
+        bottom: 70vh;
+        border-radius: 2px;
+        z-index: 1;
+    }
+    #onn {
+        filter: brightness(105);
+        z-index: 2;
+    }
+    #about {
+        font-size: 4rem;
+        text-align: center;
+        position: relative;
+        top: 80vh;
+        color: blanchedalmond;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+    }
+    #Experience {
+        font-size: 3rem;
+        position: relative;
+        text-align: center;
+        top: 70vh;
+        color: blanchedalmond;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+    }
+    #Education {
+        font-size: 3rem;
+        position: relative;
+        text-align: center;
+        top: 110vh;
+        color: blanchedalmond;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+    }
+    @keyframes color-change {
+        0% {
+            color: rgb(0, 255, 255);
+        }
+        50% {
+            color: rgb(0, 153, 255);
+        }
+        100% {
+            color: rgb(0, 89, 255);
+        }
+    }
+    #lav {
+        font-size: 5rem;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        animation: backInUp;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s;
+        animation: color-change 1s infinite;
+        position: relative;
+        top: -25rem;
+    }
+    @keyframes color-change {
+        0% {
+            color: rgb(0, 162, 255);
+        }
+        50% {
+            color: rgb(0, 68, 255);
+        }
+        100% {
+            color: rgb(0, 238, 255);
+        }
+    }
+    .snip1175 {
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 10px;
+    }
+    #oo {
+        position: relative;
+        bottom: 300%;
+        width: 35px;
+        filter: brightness(2);
+        animation: backInUp;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s;
+        bottom: 10vh;
+    }
+    #la {
+        width: 250px;
+        height: 350px;
+        opacity: 0.5;
+        right: 8%;
+        position: absolute;
+        top: 35vh;
+    }
+    #logo {
+        position: relative;
+        top: vh;
+        filter: brightness(1);
+        font-size: 50px;
+        color: #c4c4c4;
+        font-family: 'Fredericka the Great', cursive;
+        text-shadow: 0px 0px 0 rgb(245, 245, 245), 1px 1px 0 rgb(236, 236, 236), 2px 2px 0 rgb(226, 226, 226), 3px 3px 0 rgb(217, 217, 217), 4px 4px 0 rgb(207, 207, 207), 5px 5px 0 rgb(197, 197, 197), 6px 6px 0 rgb(188, 188, 188), 7px 7px 0 rgb(178, 178, 178), 8px 8px 0 rgb(169, 169, 169), 9px 9px 0 rgb(159, 159, 159), 10px 10px 0 rgb(149, 149, 149), 11px 11px 10px rgba(0, 204, 255, 0.6), 11px 11px 1px rgba(0, 204, 255, 0.5), 0px 0px 10px rgba(0, 204, 255, .2);
+    }
+    .container {
+        top: 50%;
+        position: absolute;
+        padding-left: 5%;
+        z-index: 2;
+        font-family: "Montserrat", sans-serif;
+    }
+    #head {
+        position: relative;
+        font-size: 14px;
+        font-family: "Montserrat", sans-serif;
+        filter: brightness(105);
+        font-weight: bold;
+        animation: backInUp;
+        position: absolute;
+        bottom: 22vh;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s;
+        /* don't forget to set a duration! */
+    }
+    #onne {
+        position: absolute;
+        font-family: "Montserrat", sans-serif;
+        filter: brightness(105);
+        font-weight: bold;
+        font-size: 8px;
+        animation: backInUp;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s;
+        position: absolute;
+        bottom: 15vh;
+        /* don't forget to set a duration! */
+    }
+}
+
+@media(min-width:250px)and (max-width: 365.98px) {
+    #hh{font-size: 1rem;
+        position: relative;
+          top: 3rem;
+    }
+      #fr{
+          position: relative;
+          top: 3rem;
+      }
+      #co{
+        position: relative;
+        top: 3rem;
+        font-size: 1rem;
+        font-family: "Montserrat", sans-serif;
+      }
+     #de {
+    position: relative;
+    font-size: 1rem;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    filter: brightness(5);
+    top: 125rem;
+}
+#contact {
+    font-size: 2.7rem;
+    text-align: center;
+    position: relative;
+    top: 132rem;
+    font-family: "Montserrat", sans-serif;
+    animation: color-change 1.5s infinite;
+}
+    
+    .imagess {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    .imagesss {
+        position: relative;
+        display: flex;
+        top: 47rem;
+        flex-direction: column;
+    }
+    #ig1 {
+        height: 70px;
+        width: 80px;
+        border-radius: 10%;
+    }
+    #tex {
+        font-family: "Montserrat", sans-serif;
+        filter: brightness(1);
+        font-size: 1rem;
+        text-align: center;
+        padding: 10px;
+        font-weight: bold;
+    }
+    #na {
+        text-decoration: none !important;
+        color: white;
+    }
+    #new3 {
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        border-radius: 20px;
+        box-shadow: 0px 0px 38px var(--boxes_rect_text_lighter);
+        height: 780px;
+        top: 10rem;
+    }
+    #Certi {
+        font-size: 3rem;
+        top: 5rem;
+        font-weight: bold;
+        text-align: center;
+        position: relative;
+        color: blanchedalmond;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+    }
+    #Skills {
+        font-size: 4rem;
+        text-align: center;
+        position: relative;
+        color: blanchedalmond;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+        top: 7rem;
+        font-weight: bold;
+    }
+    #new2 {
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        border-radius: 20px;
+        box-shadow: 0px 0px 38px var(--boxes_rect_text_lighter);
+        height: 400px;
+        top: 10rem;
+    }
+    #sk {
+        position: relative;
+        font-size: 0.75rem;
+        filter: brightness(5);
+        font-weight: bold;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+    }
+    #skl {
+        height: 180px;
+        width: 250px;
+        border-radius: 50px;
+        padding: 20px;
+    }
+    #def {
+        position: relative;
+        font-size: 1.2rem;
+        filter: brightness(3);
+        text-align: center;
+        top: 3vh;
+        font-family: "Montserrat", sans-serif;
+    }
+    #def2 {
+        position: relative;
+        font-size: 1rem;
+        text-align: center;
+        justify-content: center;
+        filter: brightness(5);
+        top: 5vh;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+    }
+    #clg {
+        height: 180px;
+        width: 250px;
+        border-radius: 50px;
+        padding: 20px;
+    }
+    #new1 {
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        border-radius: 20px;
+        box-shadow: 0px 0px 38px var(--boxes_rect_text_lighter);
+        height: 400px;
+        top: 30rem;
+    }
+    .card-wrapper {
+        position: relative;
+        justify-content: center;
+        border-radius: 10px;
+        box-shadow: 0px 0px 38px var(--boxes_rect_text_lighter);
+        height: 510px;
+        top: -14rem;
+    }
+    .container2 {
+        position: relative;
+        font-family: "Montserrat", sans-serif;
+        top: -12vh;
+    }
+    #op1 {
+        text-align: center;
+        font-weight: bold;
+        filter: brightness(10);
+        font-size: 2rem;
+    }
+    #op {
+        text-align: center;
+        filter: brightness(3);
+        font-size: 1rem;
+    }
+    blockquote {
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+        top: -12vh;
+        font-family: Yesteryear;
+        color: var(--boxes_inner_rect);
+    }
+    blockquote::before {
+        content: "\201C";
+        font-size: 30px;
+        color: var(--maintext);
+    }
+    blockquote::after {
+        content: "\201D";
+        font-size: 30px;
+        color: var(--maintext);
+    }
+    #onn {
+        filter: brightness(105);
+        z-index: 2;
+    }
+    nav {
+        animation: nav-load var(--nav-load-time) ease-in;
+        position: relative;
+        top: 5vh;
+    }
+    .container1 {
+        position: relative;
+        top: 80vh;
+        text-align: center;
+        z-index: 2;
+        font-family: "Montserrat", sans-serif;
+        font-size: 15px;
+    }
+    #b {
+        width: 250px;
+        height: 350px;
+        opacity: 0.5;
+        position: relative;
+        bottom: 70vh;
+        border-radius: 2px;
+        z-index: 1;
+    }
+    #onn {
+        filter: brightness(105);
+        z-index: 2;
+    }
+    nav {
+        animation: nav-load var(--nav-load-time) ease-in;
+        position: relative;
+        top: 3vh;
+    }
+    .container {
+        top: 45%;
+        position: absolute;
+        z-index: 2;
+        font-family: "Montserrat", sans-serif;
+    }
+    #about {
+        font-size: 4rem;
+        font-weight: bold;
+        position: relative;
+        top: 55vh;
+        color: blanchedalmond;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+    }
+    #Experience {
+        font-size: 3.8rem;
+        font-weight: bold;
+        position: relative;
+        top: 35vh;
+        text-align: center;
+        justify-content: center;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+    }
+    #Education {
+        font-size: 3.8rem;
+        font-weight: bold;
+        position: relative;
+        top: 60vh;
+        text-align: center;
+        justify-content: center;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+    }
+    @keyframes color-change {
+        0% {
+            color: rgb(0, 255, 255);
+        }
+        50% {
+            color: rgb(0, 153, 255);
+        }
+        100% {
+            color: rgb(0, 89, 255);
+        }
+    }
+    #lav {
+        font-size: 5rem;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        animation: backInUp;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s;
+        animation: color-change 1s infinite;
+        position: relative;
+        top: -25rem;
+    }
+    @keyframes color-change {
+        0% {
+            color: rgb(0, 162, 255);
+        }
+        50% {
+            color: rgb(0, 68, 255);
+        }
+        100% {
+            color: rgb(0, 238, 255);
+        }
+    }
+    .snip1175 {
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 10px;
+    }
+    #oo {
+        position: relative;
+        top: -8vh;
+        width: 40px;
+        filter: brightness(2);
+        animation: backInUp;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s;
+        bottom: 17vh;
+    }
+    #la {
+        width: 180px;
+        height: 250px;
+        opacity: 0.5;
+        right: 8%;
+        position: absolute;
+        top: 30vh;
+    }
+    #logo {
+        position: relative;
+        top: vh;
+        filter: brightness(1);
+        font-size: 50px;
+        color: #c4c4c4;
+        font-family: 'Fredericka the Great', cursive;
+        text-shadow: 0px 0px 0 rgb(245, 245, 245), 1px 1px 0 rgb(236, 236, 236), 2px 2px 0 rgb(226, 226, 226), 3px 3px 0 rgb(217, 217, 217), 4px 4px 0 rgb(207, 207, 207), 5px 5px 0 rgb(197, 197, 197), 6px 6px 0 rgb(188, 188, 188), 7px 7px 0 rgb(178, 178, 178), 8px 8px 0 rgb(169, 169, 169), 9px 9px 0 rgb(159, 159, 159), 10px 10px 0 rgb(149, 149, 149), 11px 11px 10px rgba(0, 204, 255, 0.6), 11px 11px 1px rgba(0, 204, 255, 0.5), 0px 0px 10px rgba(0, 204, 255, .2);
+    }
+    #head {
+        font-size: 13px;
+        font-family: "Montserrat", sans-serif;
+        filter: brightness(105);
+        font-weight: bold;
+        animation: backInUp;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s;
+        /* don't forget to set a duration! */
+    }
+    #onne {
+        position: absolute;
+        font-family: "Montserrat", sans-serif;
+        filter: brightness(105);
+        font-weight: bold;
+        font-size: 10px;
+        animation: backInUp;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s;
+        /* don't forget to set a duration! */
+    }
+}
+
+@media(min-width:365px)and (max-width: 410px) { 
+    #hh{font-size: 1rem;
+        position: relative;
+          top: 3rem;
+    }
+      #fr{
+          position: relative;
+          top: 3rem;
+      }
+      #co{
+        position: relative;
+        top: 3rem;
+        font-size: 1rem;
+        font-family: "Montserrat", sans-serif;
+      }
+    #de {
+    position: relative;
+    font-size: 1rem;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    filter: brightness(5);
+    top: 125rem;
+}
+#contact {
+    font-size: 2.7rem;
+    text-align: center;
+    position: relative;
+    top: 132rem;
+    font-family: "Montserrat", sans-serif;
+    animation: color-change 1.5s infinite;
+}
+    .imagess {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    .imagesss {
+        position: relative;
+        display: flex;
+        top: 47rem;
+        flex-direction: column;
+    }
+    #ig1 {
+        height: 70px;
+        width: 80px;
+        border-radius: 10%;
+    }
+    #tex {
+        font-family: "Montserrat", sans-serif;
+        filter: brightness(1);
+        font-size: 1rem;
+        text-align: center;
+        padding: 10px;
+        font-weight: bold;
+    }
+    #na {
+        text-decoration: none !important;
+        color: white;
+    }
+    #new3 {
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        border-radius: 20px;
+        box-shadow: 0px 0px 38px var(--boxes_rect_text_lighter);
+        height: 770px;
+        top: 10rem;
+    }
+    #Certi {
+        font-size: 3rem;
+        top: 5rem;
+        font-weight: bold;
+        text-align: center;
+        position: relative;
+        color: blanchedalmond;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+    }
+    #Skills {
+        font-size: 4rem;
+        text-align: center;
+        position: relative;
+        color: blanchedalmond;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+        top: 7rem;
+        font-weight: bold;
+    }
+    #new2 {
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        border-radius: 20px;
+        box-shadow: 0px 0px 38px var(--boxes_rect_text_lighter);
+        height: 400px;
+        top: 10rem;
+    }
+    #sk {
+        position: relative;
+        font-size: 0.75rem;
+        filter: brightness(5);
+        font-weight: bold;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+    }
+    #skl {
+        height: 200px;
+        width: 300px;
+        border-radius: 50px;
+        padding: 20px;
+    }
+    #def {
+        position: relative;
+        font-size: 1.2rem;
+        filter: brightness(3);
+        text-align: center;
+        top: 3vh;
+        font-family: "Montserrat", sans-serif;
+    }
+    #def2 {
+        position: relative;
+        font-size: 1rem;
+        text-align: center;
+        justify-content: center;
+        filter: brightness(5);
+        top: 5vh;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+    }
+    #clg {
+        height: 200px;
+        width: 300px;
+        border-radius: 50px;
+        padding: 20px;
+    }
+    #new1 {
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        border-radius: 20px;
+        box-shadow: 0px 0px 38px var(--boxes_rect_text_lighter);
+        height: 400px;
+        top: 32rem;
+    }
+    .card-wrapper {
+        position: relative;
+        justify-content: center;
+        border-radius: 10px;
+        box-shadow: 0px 0px 38px var(--boxes_rect_text_lighter);
+        height: 500px;
+        top: -14rem;
+    }
+    .container2 {
+        position: relative;
+        font-family: "Montserrat", sans-serif;
+        top: -12vh;
+    }
+    #op1 {
+        text-align: center;
+        font-weight: bold;
+        filter: brightness(10);
+        font-size: 3rem;
+    }
+    #op {
+        text-align: center;
+        filter: brightness(3);
+        font-size: 1rem;
+    }
+    blockquote {
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+        top: -12vh;
+        font-family: Yesteryear;
+        color: var(--boxes_inner_rect);
+    }
+    blockquote::before {
+        content: "\201C";
+        font-size: 30px;
+        color: var(--maintext);
+    }
+    blockquote::after {
+        content: "\201D";
+        font-size: 30px;
+        color: var(--maintext);
+    }
+    #onn {
+        filter: brightness(105);
+        z-index: 2;
+    }
+    nav {
+        animation: nav-load var(--nav-load-time) ease-in;
+        position: relative;
+        top: 5vh;
+    }
+    .container1 {
+        position: relative;
+        top: 80vh;
+        text-align: center;
+        z-index: 2;
+        font-family: "Montserrat", sans-serif;
+        font-size: 15px;
+    }
+    #b {
+        width: 250px;
+        height: 350px;
+        opacity: 0.5;
+        position: relative;
+        bottom: 70vh;
+        border-radius: 2px;
+        z-index: 1;
+    }
+    #onn {
+        filter: brightness(105);
+        z-index: 2;
+    }
+    nav {
+        animation: nav-load var(--nav-load-time) ease-in;
+        position: relative;
+        top: 3vh;
+    }
+    .container {
+        top: 45%;
+        position: absolute;
+        z-index: 2;
+        font-family: "Montserrat", sans-serif;
+    }
+    #about {
+        font-size: 4rem;
+        font-weight: bold;
+        position: relative;
+        top: 55vh;
+        color: blanchedalmond;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+    }
+    #Experience {
+        font-size: 3.8rem;
+        font-weight: bold;
+        position: relative;
+        top: 35vh;
+        text-align: center;
+        justify-content: center;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+    }
+    #Education {
+        font-size: 3.8rem;
+        font-weight: bold;
+        position: relative;
+        top: 60vh;
+        text-align: center;
+        justify-content: center;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+    }
+    @keyframes color-change {
+        0% {
+            color: rgb(0, 255, 255);
+        }
+        50% {
+            color: rgb(0, 153, 255);
+        }
+        100% {
+            color: rgb(0, 89, 255);
+        }
+    }
+    #lav {
+        font-size: 5rem;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        animation: backInUp;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s;
+        animation: color-change 1s infinite;
+        position: relative;
+        top: -25rem;
+    }
+    @keyframes color-change {
+        0% {
+            color: rgb(0, 162, 255);
+        }
+        50% {
+            color: rgb(0, 68, 255);
+        }
+        100% {
+            color: rgb(0, 238, 255);
+        }
+    }
+    .snip1175 {
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 10px;
+    }
+    #oo {
+        position: relative;
+        top: -8vh;
+        width: 40px;
+        filter: brightness(2);
+        animation: backInUp;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s;
+        bottom: 17vh;
+    }
+    #la {
+        width: 180px;
+        height: 250px;
+        opacity: 0.5;
+        right: 8%;
+        position: absolute;
+        top: 30vh;
+    }
+    #logo {
+        position: relative;
+        top: vh;
+        filter: brightness(1);
+        font-size: 50px;
+        color: #c4c4c4;
+        font-family: 'Fredericka the Great', cursive;
+        text-shadow: 0px 0px 0 rgb(245, 245, 245), 1px 1px 0 rgb(236, 236, 236), 2px 2px 0 rgb(226, 226, 226), 3px 3px 0 rgb(217, 217, 217), 4px 4px 0 rgb(207, 207, 207), 5px 5px 0 rgb(197, 197, 197), 6px 6px 0 rgb(188, 188, 188), 7px 7px 0 rgb(178, 178, 178), 8px 8px 0 rgb(169, 169, 169), 9px 9px 0 rgb(159, 159, 159), 10px 10px 0 rgb(149, 149, 149), 11px 11px 10px rgba(0, 204, 255, 0.6), 11px 11px 1px rgba(0, 204, 255, 0.5), 0px 0px 10px rgba(0, 204, 255, .2);
+    }
+    #head {
+        font-size: 13px;
+        font-family: "Montserrat", sans-serif;
+        filter: brightness(105);
+        font-weight: bold;
+        animation: backInUp;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s;
+        /* don't forget to set a duration! */
+    }
+    #onne {
+        position: absolute;
+        font-family: "Montserrat", sans-serif;
+        filter: brightness(105);
+        font-weight: bold;
+        font-size: 10px;
+        animation: backInUp;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s;
+        /* don't forget to set a duration! */
+    }
+}
+
+@media(min-width:410px)and (max-width: 575.98px) {
+    #hh{font-size: 1rem;
+        position: relative;
+          top: 3rem;
+    }
+      #fr{
+          position: relative;
+          top: 3rem;
+      }
+      #co{
+        position: relative;
+        top: 3rem;
+        font-size: 1rem;
+        font-family: "Montserrat", sans-serif;
+      }
+    #de {
+        position: relative;
+        font-size: 1rem;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        filter: brightness(5);
+        top: 135rem;
+    }
+    #contact {
+        font-size: 2.7rem;
+        text-align: center;
+        position: relative;
+        top: 142rem;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+    }
+    .imagess {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    .imagesss {
+        position: relative;
+        display: flex;
+        top: 48rem;
+        flex-direction: column;
+    }
+    #ig1 {
+        height: 70px;
+        width: 80px;
+        border-radius: 10%;
+    }
+    #tex {
+        font-family: "Montserrat", sans-serif;
+        filter: brightness(1);
+        font-size: 1rem;
+        text-align: center;
+        padding: 10px;
+        font-weight: bold;
+    }
+    #na {
+        text-decoration: none !important;
+        color: white;
+    }
+    #new3 {
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        border-radius: 20px;
+        box-shadow: 0px 0px 38px var(--boxes_rect_text_lighter);
+        height: 770px;
+        top: 10rem;
+    }
+    #Certi {
+        font-size: 3.5rem;
+        top: 5rem;
+        text-align: center;
+        font-weight: bold;
+        position: relative;
+        color: blanchedalmond;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+    }
+    #Skills {
+        font-size: 3.8rem;
+        text-align: center;
+        position: relative;
+        color: blanchedalmond;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+        top: 7rem;
+        font-weight: bold;
+    }
+    #new2 {
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        border-radius: 20px;
+        box-shadow: 0px 0px 38px var(--boxes_rect_text_lighter);
+        height: 400px;
+        top: 10rem;
+    }
+    #sk {
+        position: relative;
+        font-size: 0.85rem;
+        filter: brightness(5);
+        font-weight: bold;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+    }
+    #skl {
+        height: 200px;
+        width: 350px;
+        border-radius: 50px;
+        padding: 20px;
+    }
+    #def {
+        position: relative;
+        font-size: 1.2rem;
+        filter: brightness(3);
+        text-align: center;
+        top: 3vh;
+        font-family: "Montserrat", sans-serif;
+    }
+    #def2 {
+        position: relative;
+        font-size: 1rem;
+        text-align: center;
+        justify-content: center;
+        filter: brightness(5);
+        top: 5vh;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+    }
+    #clg {
+        height: 200px;
+        width: 350px;
+        border-radius: 50px;
+        padding: 20px;
+    }
+    #new1 {
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        border-radius: 20px;
+        box-shadow: 0px 0px 38px var(--boxes_rect_text_lighter);
+        height: 400px;
+        top: 40rem;
+    }
+    .card-wrapper {
+        position: relative;
+        justify-content: center;
+        border-radius: 10px;
+        box-shadow: 0px 0px 38px var(--boxes_rect_text_lighter);
+        height: 480px;
+        top: -14rem;
+    }
+    .container2 {
+        position: relative;
+        font-family: "Montserrat", sans-serif;
+        top: -12vh;
+    }
+    #op1 {
+        text-align: center;
+        font-weight: bold;
+        filter: brightness(10);
+        font-size: 3rem;
+    }
+    #op {
+        text-align: center;
+        filter: brightness(3);
+        font-size: 1.09rem;
+    }
+    blockquote {
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+        top: -12vh;
+        font-family: Yesteryear;
+        color: var(--boxes_inner_rect);
+    }
+    blockquote::before {
+        content: "\201C";
+        font-size: 30px;
+        color: var(--maintext);
+    }
+    blockquote::after {
+        content: "\201D";
+        font-size: 30px;
+        color: var(--maintext);
+    }
+    .container1 {
+        position: relative;
+        top: 130vh;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-size: 15px;
+    }
+    #onn {
+        filter: brightness(105);
+        z-index: 2;
+    }
+    nav {
+        animation: nav-load var(--nav-load-time) ease-in;
+        position: relative;
+        top: 5vh;
+    }
+    .container1 {
+        position: relative;
+        top: 92vh;
+        text-align: center;
+        z-index: 2;
+        font-family: "Montserrat", sans-serif;
+        font-size: 15px;
+    }
+    #b {
+        width: 320px;
+        height: 420px;
+        opacity: 0.5;
+        position: relative;
+        bottom: 75vh;
+        border-radius: 2px;
+        z-index: 1;
+    }
+    #onn {
+        filter: brightness(105);
+        z-index: 2;
+    }
+    nav {
+        animation: nav-load var(--nav-load-time) ease-in;
+        position: relative;
+        top: 3vh;
+    }
+    .container {
+        top: 40%;
+        position: absolute;
+        z-index: 2;
+        font-family: "Montserrat", sans-serif;
+    }
+    #about {
+        font-size: 4rem;
+        font-weight: bold;
+        position: relative;
+        top: 60vh;
+        color: blanchedalmond;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+    }
+    #Experience {
+        font-size: 3rem;
+        text-align: center;
+        position: relative;
+        font-weight: bold;
+        top: 45vh;
+        color: blanchedalmond;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+    }
+    #Education {
+        font-size: 3rem;
+        text-align: center;
+        position: relative;
+        font-weight: bold;
+        top: 75vh;
+        color: blanchedalmond;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+    }
+    @keyframes color-change {
+        0% {
+            color: rgb(0, 255, 255);
+        }
+        50% {
+            color: rgb(0, 153, 255);
+        }
+        100% {
+            color: rgb(0, 89, 255);
+        }
+    }
+    #lav {
+        font-size: 5rem;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        animation: backInUp;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s;
+        animation: color-change 1s infinite;
+        position: relative;
+        top: -25rem;
+    }
+    @keyframes color-change {
+        0% {
+            color: rgb(0, 162, 255);
+        }
+        50% {
+            color: rgb(0, 68, 255);
+        }
+        100% {
+            color: rgb(0, 238, 255);
+        }
+    }
+    .snip1175 {
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 10px;
+    }
+    #oo {
+        position: relative;
+        top: -8vh;
+        width: 40px;
+        filter: brightness(2);
+        animation: backInUp;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s;
+        bottom: 17vh;
+    }
+    #la {
+        width: 200px;
+        height: 280px;
+        opacity: 0.5;
+        right: 8%;
+        position: absolute;
+        top: 28vh;
+    }
+    #logo {
+        position: relative;
+        top: vh;
+        filter: brightness(1);
+        font-size: 50px;
+        color: #c4c4c4;
+        font-family: 'Fredericka the Great', cursive;
+        text-shadow: 0px 0px 0 rgb(245, 245, 245), 1px 1px 0 rgb(236, 236, 236), 2px 2px 0 rgb(226, 226, 226), 3px 3px 0 rgb(217, 217, 217), 4px 4px 0 rgb(207, 207, 207), 5px 5px 0 rgb(197, 197, 197), 6px 6px 0 rgb(188, 188, 188), 7px 7px 0 rgb(178, 178, 178), 8px 8px 0 rgb(169, 169, 169), 9px 9px 0 rgb(159, 159, 159), 10px 10px 0 rgb(149, 149, 149), 11px 11px 10px rgba(0, 204, 255, 0.6), 11px 11px 1px rgba(0, 204, 255, 0.5), 0px 0px 10px rgba(0, 204, 255, .2);
+    }
+    #head {
+        font-size: 13px;
+        font-family: "Montserrat", sans-serif;
+        filter: brightness(105);
+        font-weight: bold;
+        animation: backInUp;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s;
+        /* don't forget to set a duration! */
+    }
+    #onne {
+        position: absolute;
+        font-family: "Montserrat", sans-serif;
+        filter: brightness(105);
+        font-weight: bold;
+        font-size: 10px;
+        animation: backInUp;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s;
+        /* don't forget to set a duration! */
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #hh{font-size: 1rem;
+        position: relative;
+          top: 3rem;
+    }
+      #fr{
+          position: relative;
+          top: 3rem;
+      }
+      #co{
+        position: relative;
+        top: 3rem;
+        font-size: 1rem;
+        font-family: "Montserrat", sans-serif;
+      }
+    #de {
+        position: relative;
+        font-size: 1.2rem;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        filter: brightness(5);
+        top: 130rem;
+    }
+    #contact {
+        font-size: 4rem;
+        text-align: center;
+        position: relative;
+        top: 140rem;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+    }
+    .imagess {
+        position: absolute;
+        display: flex;
+        padding-top: 40px;
+    }
+    .imagesss {
+        position: relative;
+        display: flex;
+        top: 40rem;
+    }
+    #ig1 {
+        height: 80px;
+        width: 80px;
+        border-radius: 10%;
+    }
+    #tex {
+        font-family: "Montserrat", sans-serif;
+        filter: brightness(1);
+        font-size: 1rem;
+        text-align: center;
+        padding: 10px;
+        font-weight: bold;
+    }
+    #na {
+        text-decoration: none !important;
+        color: white;
+    }
+    #new3 {
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        border-radius: 20px;
+        box-shadow: 0px 0px 38px var(--boxes_rect_text_lighter);
+        height: 400px;
+        top: 10rem;
+    }
+    #Certi {
+        font-size: 5rem;
+        top: 5rem;
+        text-align: center;
+        position: relative;
+        color: blanchedalmond;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+    }
+    #Skills {
+        font-size: 6rem;
+        text-align: center;
+        position: relative;
+        color: blanchedalmond;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+        top: 7rem;
+    }
+    #new2 {
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        border-radius: 20px;
+        box-shadow: 0px 0px 38px var(--boxes_rect_text_lighter);
+        height: 400px;
+        top: 10rem;
+    }
+    #sk {
+        position: relative;
+        font-size: 1rem;
+        filter: brightness(5);
+        font-weight: bold;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        padding-left: 30px;
+    }
+    #skl {
+        height: 200px;
+        width: 350px;
+        border-radius: 50px;
+        padding: 20px;
+    }
+    #def {
+        position: relative;
+        font-size: 1.7rem;
+        filter: brightness(3);
+        text-align: center;
+        top: 3vh;
+        font-family: "Montserrat", sans-serif;
+    }
+    #def2 {
+        position: relative;
+        font-size: 1.2rem;
+        text-align: center;
+        justify-content: center;
+        filter: brightness(5);
+        top: 5vh;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+    }
+    #clg {
+        height: 200px;
+        width: 350px;
+        border-radius: 50px;
+        padding: 20px;
+    }
+    #new1 {
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        border-radius: 20px;
+        box-shadow: 0px 0px 38px var(--boxes_rect_text_lighter);
+        height: 400px;
+        top: 55rem;
+    }
+    .card-wrapper {
+        position: relative;
+        justify-content: center;
+        border-radius: 10px;
+        box-shadow: 0px 0px 38px var(--boxes_rect_text_lighter);
+        height: 370px;
+        top: -10rem;
+    }
+    .container2 {
+        position: relative;
+        font-family: "Montserrat", sans-serif;
+        top: -12vh;
+    }
+    #op1 {
+        text-align: center;
+        font-weight: bold;
+        filter: brightness(10);
+        font-size: 3rem;
+    }
+    #op {
+        text-align: center;
+        filter: brightness(3);
+        font-size: 1rem;
+    }
+    blockquote {
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+        top: -15vh;
+        font-family: Yesteryear;
+        color: var(--boxes_inner_rect);
+    }
+    blockquote::before {
+        content: "\201C";
+        font-size: 30px;
+        color: var(--maintext);
+    }
+    blockquote::after {
+        content: "\201D";
+        font-size: 30px;
+        color: var(--maintext);
+    }
+    .container1 {
+        position: relative;
+        top: 130vh;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-size: 15px;
+    }
+    #onn {
+        filter: brightness(105);
+        z-index: 2;
+    }
+    nav {
+        animation: nav-load var(--nav-load-time) ease-in;
+        position: relative;
+        top: 5vh;
+    }
+    #about {
+        font-size: 6rem;
+        text-align: center;
+        position: relative;
+        top: 90vh;
+        color: blanchedalmond;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+    }
+    #Experience {
+        font-size: 6rem;
+        text-align: center;
+        position: relative;
+        top: 90vh;
+        color: blanchedalmond;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+    }
+    #Education {
+        font-size: 6rem;
+        text-align: center;
+        position: relative;
+        top: 120vh;
+        color: blanchedalmond;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+    }
+    @keyframes color-change {
+        0% {
+            color: rgb(0, 255, 255);
+        }
+        50% {
+            color: rgb(0, 153, 255);
+        }
+        100% {
+            color: rgb(0, 89, 255);
+        }
+    }
+    #lav {
+        font-size: 5rem;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        animation: backInUp;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s;
+        animation: color-change 1s infinite;
+        position: relative;
+        top: -20rem;
+    }
+    @keyframes color-change {
+        0% {
+            color: rgb(0, 162, 255);
+        }
+        50% {
+            color: rgb(0, 68, 255);
+        }
+        100% {
+            color: rgb(0, 238, 255);
+        }
+    }
+    .snip1175 {
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 11px;
+    }
+    #oo {
+        width: 30px;
+        filter: brightness(2);
+        position: relative;
+        bottom: 15vh;
+    }
+    #la {
+        width: 280px;
+        height: 350px;
+        opacity: 0.5;
+        right: 8%;
+        position: absolute;
+        top: 45%;
+        border-radius: 2px;
+    }
+    #b {
+        width: 250px;
+        height: 300px;
+        opacity: 0.5;
+        position: relative;
+        bottom: 70vh;
+        border-radius: 2px;
+        z-index: 1;
+    }
+    .container {
+        top: 55%;
+        position: absolute;
+        z-index: 2;
+        font-family: "Montserrat", sans-serif;
+    }
+    #logo {
+        position: relative;
+        font-size: 10vh;
+        filter: brightness(1);
+        font-size: 55px;
+        color: #c4c4c4;
+        font-family: 'Fredericka the Great', cursive;
+        text-shadow: 0px 0px 0 rgb(245, 245, 245), 1px 1px 0 rgb(236, 236, 236), 2px 2px 0 rgb(226, 226, 226), 3px 3px 0 rgb(217, 217, 217), 4px 4px 0 rgb(207, 207, 207), 5px 5px 0 rgb(197, 197, 197), 6px 6px 0 rgb(188, 188, 188), 7px 7px 0 rgb(178, 178, 178), 8px 8px 0 rgb(169, 169, 169), 9px 9px 0 rgb(159, 159, 159), 10px 10px 0 rgb(149, 149, 149), 11px 11px 10px rgba(0, 204, 255, 0.6), 11px 11px 1px rgba(0, 204, 255, 0.5), 0px 0px 10px rgba(0, 204, 255, .2);
+    }
+    #head {
+        position: relative;
+        top: -7vh;
+        font-size: 20px;
+        font-family: "Montserrat", sans-serif;
+        filter: brightness(105);
+        font-weight: bold;
+        animation: backInUp;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s;
+        /* don't forget to set a duration! */
+    }
+    #onne {
+        position: absolute;
+        top: 3vh;
+        font-family: "Montserrat", sans-serif;
+        filter: brightness(105);
+        font-weight: bold;
+        font-size: 11px;
+        animation: backInUp;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s;
+        /* don't forget to set a duration! */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #hh{font-size: 1rem;
+        position: relative;
+          top: 3rem;
+    }
+      #fr{
+          position: relative;
+          top: 3rem;
+      }
+      #co{
+        position: relative;
+        top: 3rem;
+        font-size: 1rem;
+        font-family: "Montserrat", sans-serif;
+      }
+    #de {
+        position: relative;
+        font-size: 1.2rem;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        filter: brightness(5);
+        top: 140rem;
+    }
+    #contact {
+        font-size: 5rem;
+        text-align: center;
+        position: relative;
+        top: 155rem;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+    }
+    .imagess {
+        position: absolute;
+        display: flex;
+        padding: 20px;
+    }
+    .imagesss {
+        position: relative;
+        display: flex;
+        padding: 60px;
+        top: 38rem;
+    }
+    #ig1 {
+        height: 120px;
+        width: 150px;
+        border-radius: 30%;
+    }
+    #tex {
+        font-family: "Montserrat", sans-serif;
+        filter: brightness(1);
+        font-size: 1rem;
+        text-align: center;
+        padding: 60px;
+        font-weight: bold;
+    }
+    #na {
+        text-decoration: none !important;
+        color: white;
+    }
+    #new3 {
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 0px 0px 38px var(--boxes_rect_text_lighter);
+        height: 630px;
+        top: 0rem;
+    }
+    #Certi {
+        font-size: 6rem;
+        top: -5rem;
+        text-align: center;
+        position: relative;
+        color: blanchedalmond;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+    }
+    #Skills {
+        font-size: 8rem;
+        top: 0vh;
+        text-align: center;
+        position: relative;
+        color: blanchedalmond;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+    }
+    #new2 {
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 0px 0px 38px var(--boxes_rect_text_lighter);
+        height: 220px;
+        top: 2rem;
+    }
+    #sk {
+        position: relative;
+        font-size: 1rem;
+        filter: brightness(5);
+        font-weight: bold;
+        text-align: left;
+        font-family: "Montserrat", sans-serif;
+        top: -12rem;
+        padding-left: 30px;
+    }
+    #skl {
+        height: 220px;
+        width: 350px;
+        border-radius: 50px;
+        padding: 20px;
+        position: relative;
+        opacity: 0.5;
+        left: 12rem;
+    }
+    #def {
+        position: relative;
+        font-size: 1.5rem;
+        filter: brightness(3);
+        text-align: left;
+        top: -12rem;
+        font-family: "Montserrat", sans-serif;
+        padding-left: 3rem;
+    }
+    #def2 {
+        position: relative;
+        font-size: 1rem;
+        text-align: left;
+        filter: brightness(5);
+        top: -12rem;
+        padding-left: 3rem;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+    }
+    #clg {
+        height: 220px;
+        width: 350px;
+        border-radius: 50px;
+        padding: 20px;
+        position: relative;
+        left: 12rem;
+    }
+    #new1 {
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 0px 0px 38px var(--boxes_rect_text_lighter);
+        height: 220px;
+        top: 55rem;
+    }
+    .card-wrapper {
+        position: relative;
+        justify-content: center;
+        border-radius: 10px;
+        box-shadow: 0px 0px 38px var(--boxes_rect_text_lighter);
+        height: 300px;
+        top: -10rem;
+    }
+    .container2 {
+        position: relative;
+        font-family: "Montserrat", sans-serif;
+        top: -12vh;
+    }
+    #op1 {
+        text-align: center;
+        font-weight: bold;
+        filter: brightness(10);
+        font-size: 3rem;
+    }
+    #op {
+        text-align: center;
+        filter: brightness(3);
+        font-size: 1rem;
+    }
+    blockquote {
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+        top: -15vh;
+        font-family: Yesteryear;
+        color: var(--boxes_inner_rect);
+    }
+    blockquote::before {
+        content: "\201C";
+        font-size: 30px;
+        color: var(--maintext);
+    }
+    blockquote::after {
+        content: "\201D";
+        font-size: 30px;
+        color: var(--maintext);
+    }
+    .container1 {
+        position: relative;
+        top: 130vh;
+        z-index: 2;
+        font-family: "Montserrat", sans-serif;
+        font-size: 15px;
+    }
+    nav {
+        animation: nav-load var(--nav-load-time) ease-in;
+        position: relative;
+        top: 8vh;
+    }
+    #about {
+        font-size: 7rem;
+        position: relative;
+        top: 90vh;
+        color: blanchedalmond;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+    }
+    #Experience {
+        font-size: 8rem;
+        text-align: center;
+        position: relative;
+        top: 90vh;
+        color: blanchedalmond;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+    }
+    #Education {
+        font-size: 8rem;
+        text-align: center;
+        position: relative;
+        top: 120vh;
+        color: blanchedalmond;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+    }
+    @keyframes color-change {
+        0% {
+            color: rgb(0, 255, 255);
+        }
+        50% {
+            color: rgb(0, 153, 255);
+        }
+        100% {
+            color: rgb(0, 89, 255);
+        }
+    }
+    #lav {
+        font-size: 5rem;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        animation: backInUp;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s;
+        animation: color-change 1s infinite;
+        position: relative;
+        top: -15rem;
+    }
+    @keyframes color-change {
+        0% {
+            color: rgb(0, 162, 255);
+        }
+        50% {
+            color: rgb(0, 68, 255);
+        }
+        100% {
+            color: rgb(0, 238, 255);
+        }
+    }
+    .snip1175 {
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 12px;
+    }
+    #oo {
+        width: 35px;
+        filter: brightness(2);
+        position: relative;
+        bottom: 120%;
+        left: 5rem;
+    }
+    #la {
+        width: 280px;
+        height: 350px;
+        opacity: 0.5;
+        right: 10%;
+        position: absolute;
+        top: 42%;
+    }
+    #b {
+        width: 250px;
+        height: 300px;
+        opacity: 0.5;
+        position: relative;
+        bottom: 70vh;
+        border-radius: 2px;
+        z-index: 1;
+    }
+    #logo {
+        position: relative;
+        top: vh;
+        filter: brightness(1);
+        font-size: 50px;
+        color: #c4c4c4;
+        font-family: 'Fredericka the Great', cursive;
+        text-shadow: 0px 0px 0 rgb(245, 245, 245), 1px 1px 0 rgb(236, 236, 236), 2px 2px 0 rgb(226, 226, 226), 3px 3px 0 rgb(217, 217, 217), 4px 4px 0 rgb(207, 207, 207), 5px 5px 0 rgb(197, 197, 197), 6px 6px 0 rgb(188, 188, 188), 7px 7px 0 rgb(178, 178, 178), 8px 8px 0 rgb(169, 169, 169), 9px 9px 0 rgb(159, 159, 159), 10px 10px 0 rgb(149, 149, 149), 11px 11px 10px rgba(0, 204, 255, 0.6), 11px 11px 1px rgba(0, 204, 255, 0.5), 0px 0px 10px rgba(0, 204, 255, .2);
+    }
+    #head {
+        position: relative;
+        top: -5vh;
+        left: 5rem;
+        font-size: 25px;
+        font-family: "Montserrat", sans-serif;
+        filter: brightness(105);
+        font-weight: bold;
+        animation: backInUp;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s;
+        /* don't forget to set a duration! */
+    }
+    #onn {
+        filter: brightness(105);
+    }
+    #onne {
+        position: absolute;
+        font-family: "Montserrat", sans-serif;
+        filter: brightness(105);
+        font-weight: bold;
+        font-size: 12px;
+        left: 8rem;
+        animation: backInUp;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s;
+        /* don't forget to set a duration! */
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #hh{font-size: 1rem;
+        position: relative;
+          top: 3rem;
+    }
+      #fr{
+          position: relative;
+          top: 3rem;
+      }
+      #co{
+        position: relative;
+        top: 3rem;
+        font-size: 1rem;
+        font-family: "Montserrat", sans-serif;
+      }
+    #de {
+        position: relative;
+        font-size: 1.5rem;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        filter: brightness(5);
+        top: 135rem;
+    }
+    #contact {
+        font-size: 6rem;
+        text-align: center;
+        position: relative;
+        top: 155rem;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+    }
+    .imagess {
+        position: absolute;
+        display: flex;
+        padding: 20px;
+    }
+    .imagesss {
+        position: relative;
+        display: flex;
+        padding: 60px;
+        top: 45rem;
+    }
+    #ig1 {
+        height: 120px;
+        width: 150px;
+        border-radius: 30%;
+    }
+    #tex {
+        font-family: "Montserrat", sans-serif;
+        filter: brightness(1);
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 60px;
+        font-weight: bold;
+    }
+    #na {
+        text-decoration: none !important;
+        color: white;
+    }
+    #new3 {
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 0px 0px 38px var(--boxes_rect_text_lighter);
+        height: 630px;
+        top: 0rem;
+    }
+    #Certi {
+        font-size: 8rem;
+        top: -5rem;
+        text-align: center;
+        position: relative;
+        color: blanchedalmond;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+    }
+    #Skills {
+        font-size: 8rem;
+        text-align: center;
+        top: 0vh;
+        position: relative;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+    }
+    #new2 {
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 0px 0px 38px var(--boxes_rect_text_lighter);
+        height: 250px;
+        top: 5rem;
+    }
+    #sk {
+        position: relative;
+        font-size: 1.2rem;
+        filter: brightness(5);
+        font-weight: bold;
+        text-align: left;
+        font-family: "Montserrat", sans-serif;
+        top: -14rem;
+        padding-left: 30px;
+    }
+    #skl {
+        height: 250px;
+        width: 400px;
+        border-radius: 50px;
+        padding: 20px;
+        position: relative;
+        align-items: center;
+        left: 17rem;
+    }
+    #def {
+        position: relative;
+        font-size: 1.5rem;
+        filter: brightness(3);
+        text-align: left;
+        top: -12rem;
+        font-family: "Montserrat", sans-serif;
+        padding-left: 10rem;
+    }
+    #def2 {
+        position: relative;
+        font-size: 1.2rem;
+        text-align: left;
+        filter: brightness(5);
+        top: -12rem;
+        padding-left: 10rem;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+    }
+    #clg {
+        height: 250px;
+        width: 400px;
+        border-radius: 50px;
+        padding: 20px;
+        position: relative;
+        align-items: center;
+        left: 17rem;
+    }
+    #new1 {
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 0px 0px 38px var(--boxes_rect_text_lighter);
+        height: 250px;
+        top: 45rem;
+    }
+    .card-wrapper {
+        position: relative;
+        justify-content: center;
+        border-radius: 10px;
+        box-shadow: 0px 0px 38px var(--boxes_rect_text_lighter);
+        height: 300px;
+        top: 1rem;
+    }
+    .container2 {
+        position: relative;
+        font-family: "Montserrat", sans-serif;
+        top: -12vh;
+    }
+    #op1 {
+        text-align: center;
+        font-weight: bold;
+        filter: brightness(10);
+        font-size: 3rem;
+    }
+    #op {
+        text-align: center;
+        filter: brightness(3);
+        font-size: 1rem;
+    }
+    blockquote {
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+        top: -18vh;
+        font-family: Yesteryear;
+        color: var(--boxes_inner_rect);
+    }
+    blockquote::before {
+        content: "\201C";
+        font-size: 30px;
+        color: var(--maintext);
+    }
+    blockquote::after {
+        content: "\201D";
+        font-size: 30px;
+        color: var(--maintext);
+    }
+    .container1 {
+        position: relative;
+        top: 90vh;
+        text-align: left;
+        padding: 8rem;
+        z-index: 2;
+        font-family: "Montserrat", sans-serif;
+        font-size: 15px;
+    }
+    #onn {
+        filter: brightness(105);
+    }
+    nav {
+        animation: nav-load var(--nav-load-time) ease-in;
+        position: relative;
+        top: 5vh;
+    }
+    #about {
+        font-size: 8rem;
+        text-align: center;
+        position: relative;
+        top: 95vh;
+        color: blanchedalmond;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+    }
+    #Experience {
+        font-size: 8rem;
+        text-align: center;
+        position: relative;
+        top: 90vh;
+        color: blanchedalmond;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+    }
+    #Education {
+        font-size: 8rem;
+        text-align: center;
+        position: relative;
+        top: 90vh;
+        color: blanchedalmond;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+    }
+    @keyframes color-change {
+        0% {
+            color: rgb(0, 255, 255);
+        }
+        50% {
+            color: rgb(0, 153, 255);
+        }
+        100% {
+            color: rgb(0, 89, 255);
+        }
+    }
+    #lav {
+        font-size: 8rem;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        animation: backInUp;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s;
+        animation: color-change 1s infinite;
+        position: relative;
+        top: -10rem;
+    }
+    @keyframes color-change {
+        0% {
+            color: rgb(0, 162, 255);
+        }
+        50% {
+            color: rgb(0, 68, 255);
+        }
+        100% {
+            color: rgb(0, 238, 255);
+        }
+    }
+    .snip1175 {
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 13px;
+    }
+    #oo {
+        width: 40px;
+        filter: brightness(2);
+        position: relative;
+        bottom: 15vh;
+        left: 5rem;
+        animation: backInUp;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s;
+    }
+    #la {
+        width: 350px;
+        height: 450px;
+        opacity: 0.5;
+        right: 10%;
+        position: absolute;
+        top: 30%;
+    }
+    #b {
+        width: 320px;
+        height: 380px;
+        opacity: 0.5;
+        right: 10%;
+        position: absolute;
+        top: 15%;
+    }
+    #logo {
+        position: relative;
+        font-size: 10vh;
+        filter: brightness(1);
+        font-size: 65px;
+        color: #c4c4c4;
+        font-family: 'Fredericka the Great', cursive;
+        text-shadow: 0px 0px 0 rgb(245, 245, 245), 1px 1px 0 rgb(236, 236, 236), 2px 2px 0 rgb(226, 226, 226), 3px 3px 0 rgb(217, 217, 217), 4px 4px 0 rgb(207, 207, 207), 5px 5px 0 rgb(197, 197, 197), 6px 6px 0 rgb(188, 188, 188), 7px 7px 0 rgb(178, 178, 178), 8px 8px 0 rgb(169, 169, 169), 9px 9px 0 rgb(159, 159, 159), 10px 10px 0 rgb(149, 149, 149), 11px 11px 10px rgba(0, 204, 255, 0.6), 11px 11px 1px rgba(0, 204, 255, 0.5), 0px 0px 10px rgba(0, 204, 255, .2);
+    }
+    #head {
+        position: relative;
+        font-size: 30px;
+        top: -7rem;
+        font-family: "Montserrat", sans-serif;
+        filter: brightness(105);
+        font-weight: bold;
+        animation: backInUp;
+        left: 5rem;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s;
+        /* don't forget to set a duration! */
+    }
+    #onne {
+        position: absolute;
+        font-family: "Montserrat", sans-serif;
+        filter: brightness(105);
+        font-weight: bold;
+        font-size: 15px;
+        left: 8.5rem;
+        top: 1rem;
+        animation: backInUp;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1700px) {
+    #hh{font-size: 1rem;
+        position: relative;
+          top: 3rem;
+    }
+      #fr{
+          position: relative;
+          top: 3rem;
+      }
+      #co{
+        position: relative;
+        top: 3rem;
+        font-size: 1rem;
+        font-family: "Montserrat", sans-serif;
+      }
+     
+    #de {
+        position: relative;
+        font-size: 1.5rem;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        filter: brightness(5);
+        top: 130rem;
+        ;
+    }
+    #contact {
+        font-size: 8rem;
+        text-align: center;
+        position: relative;
+        top: 155rem;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+    }
+    .imagess {
+        position: absolute;
+        display: flex;
+        padding: 20px;
+    }
+    .imagesss {
+        position: relative;
+        display: flex;
+        padding: 60px;
+        top: 45rem;
+    }
+    #ig1 {
+        height: 120px;
+        width: 150px;
+        border-radius: 30%;
+    }
+    #tex {
+        font-family: "Montserrat", sans-serif;
+        filter: brightness(1);
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 60px;
+        font-weight: bold;
+    }
+    #na {
+        text-decoration: none !important;
+        color: white;
+    }
+    #Skills {
+        font-size: 8rem;
+        top: 0vh;
+        text-align: center;
+        position: relative;
+        color: blanchedalmond;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+    }
+    #Certi {
+        font-size: 8rem;
+        top: -5rem;
+        text-align: center;
+        position: relative;
+        color: blanchedalmond;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+    }
+    #new3 {
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 0px 0px 38px var(--boxes_rect_text_lighter);
+        height: 630px;
+        top: 0rem;
+    }
+    #new2 {
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 0px 0px 38px var(--boxes_rect_text_lighter);
+        height: 250px;
+        top: 5rem;
+    }
+    #sk {
+        position: relative;
+        font-size: 1.2rem;
+        filter: brightness(5);
+        font-weight: bold;
+        text-align: left;
+        font-family: "Montserrat", sans-serif;
+        top: -14rem;
+        padding-left: 30px;
+    }
+    #skl {
+        height: 250px;
+        width: 450px;
+        border-radius: 50px;
+        padding: 20px;
+        position: relative;
+        align-items: center;
+        left: 20rem;
+    }
+    #def {
+        position: relative;
+        font-size: 1.5rem;
+        filter: brightness(3);
+        text-align: left;
+        top: -12rem;
+        font-family: "Montserrat", sans-serif;
+        padding-left: 10rem;
+    }
+    #def2 {
+        position: relative;
+        font-size: 1.2rem;
+        text-align: left;
+        filter: brightness(5);
+        top: -12rem;
+        padding-left: 10rem;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+    }
+    #clg {
+        height: 250px;
+        width: 450px;
+        border-radius: 50px;
+        padding: 20px;
+        position: relative;
+        align-items: center;
+        left: 20rem;
+    }
+    #new1 {
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 0px 0px 38px var(--boxes_rect_text_lighter);
+        height: 250px;
+        top: 45rem;
+    }
+    .card-wrapper {
+        position: relative;
+        justify-content: center;
+        border-radius: 10px;
+        box-shadow: 0px 0px 38px var(--boxes_rect_text_lighter);
+        height: 300px;
+        top: 1rem;
+    }
+    .container2 {
+        position: relative;
+        font-family: "Montserrat", sans-serif;
+        top: -12vh;
+    }
+    #op1 {
+        text-align: center;
+        font-weight: bold;
+        filter: brightness(10);
+        font-size: 3rem;
+    }
+    #op {
+        text-align: center;
+        filter: brightness(3);
+        font-size: 1rem;
+    }
+    blockquote {
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+        top: -20vh;
+        font-family: Yesteryear;
+        color: var(--boxes_inner_rect);
+    }
+    blockquote::before {
+        content: "\201C";
+        font-size: 30px;
+        color: var(--maintext);
+    }
+    blockquote::after {
+        content: "\201D";
+        font-size: 30px;
+        color: var(--maintext);
+    }
+    .about-para {
+        position: relative;
+        left: 18px;
+        z-index: 2;
+        font-family: "Montserrat", sans-serif;
+        font-size: 10px;
+        font-family: "Montserrat", sans-serif;
+        filter: brightness(105);
+    }
+    .container1 {
+        position: relative;
+        top: 90vh;
+        text-align: left;
+        padding: 10rem;
+        z-index: 2;
+        font-family: "Montserrat", sans-serif;
+        font-size: 15px;
+    }
+    nav {
+        animation: nav-load var(--nav-load-time) ease-in;
+        position: relative;
+        top: 3vh;
+    }
+    #about {
+        font-size: 8rem;
+        text-align: center;
+        position: relative;
+        top: 100vh;
+        color: blanchedalmond;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+    }
+    #Experience {
+        font-size: 8rem;
+        text-align: center;
+        position: relative;
+        top: 90vh;
+        color: blanchedalmond;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+    }
+    #Education {
+        font-size: 8rem;
+        text-align: center;
+        position: relative;
+        top: 90vh;
+        font-family: "Montserrat", sans-serif;
+        animation: color-change 1.5s infinite;
+    }
+    @keyframes color-change {
+        0% {
+            color: rgb(0, 255, 255);
+        }
+        50% {
+            color: rgb(0, 153, 255);
+        }
+        100% {
+            color: rgb(0, 89, 255);
+        }
+    }
+    .snip1175 {
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    #oo {
+        width: 60px;
+        filter: brightness(2);
+        animation: backInUp;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s;
+        position: relative;
+        bottom: 15vh;
+        left: 6rem;
+    }
+    .container {
+        top: 55%;
+        position: absolute;
+        left: 20px;
+        z-index: 2;
+        font-family: "Montserrat", sans-serif;
+    }
+    #la {
+        width: 350px;
+        height: 420px;
+        opacity: 0.5;
+        right: 15%;
+        position: absolute;
+        top: 30%;
+        animation: backInUp;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s;
+    }
+    #logo {
+        position: relative;
+        font-size: 10vh;
+        filter: brightness(1);
+        font-size: 70px;
+        color: #c4c4c4;
+        font-family: 'Fredericka the Great', cursive;
+        text-shadow: 0px 0px 0 rgb(245, 245, 245), 1px 1px 0 rgb(236, 236, 236), 2px 2px 0 rgb(226, 226, 226), 3px 3px 0 rgb(217, 217, 217), 4px 4px 0 rgb(207, 207, 207), 5px 5px 0 rgb(197, 197, 197), 6px 6px 0 rgb(188, 188, 188), 7px 7px 0 rgb(178, 178, 178), 8px 8px 0 rgb(169, 169, 169), 9px 9px 0 rgb(159, 159, 159), 10px 10px 0 rgb(149, 149, 149), 11px 11px 10px rgba(0, 204, 255, 0.6), 11px 11px 1px rgba(0, 204, 255, 0.5), 0px 0px 10px rgba(0, 204, 255, .2);
+    }
+    #head {
+        position: relative;
+        bottom: 15vh;
+        font-size: 30px;
+        font-family: "Montserrat", sans-serif;
+        filter: brightness(105);
+        font-weight: bold;
+        animation: backInUp;
+        left: 6rem;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s;
+        /* don't forget to set a duration! */
+    }
+    #onne {
+        position: absolute;
+        bottom: 30vh;
+        font-family: "Montserrat", sans-serif;
+        filter: brightness(105);
+        font-weight: bold;
+        font-size: 15px;
+        animation: backInUp;
+        left: 10rem;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s;
+        /* don't forget to set a duration! */
+    }
+    #b {
+        width: 350px;
+        height: 400px;
+        opacity: 0.5;
+        right: 13%;
+        position: absolute;
+        top: 15%;
+        animation: backInUp;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s;
+    }
+    #onn {
+        filter: brightness(105);
+    }
+}
+
+#high {
+    color: rgb(0, 174, 255);
+}
+
+.images {
+    display: flex;
+}
